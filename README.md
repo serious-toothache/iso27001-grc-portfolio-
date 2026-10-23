@@ -56,4 +56,4 @@ No dependencies or AWS account needed for mock mode. Results land in `evidence/`
 
 - Tausi Telehealth, its people and its environment are fictional. The account ID is AWS's documentation example.
 - ISO control descriptions are my own paraphrases, not the standard's text.
-- Built by **Louisz Rigensky W.** · [LinkedIn](https://www.linkedin.com/in/louisz-rigensky-w-3b7700213) · CGE-AUD · CompTIA Security+
+- Built by **Louisz Rigensky W.** · [LinkedIn](https://www.linkedin.com/in/louisz-rigensky-w-3b7700213) · CGE-AUD 
