@@ -1,0 +1,5 @@
+__pycache__/
+.pytest_cache/
+.venv/
+# Local evidence runs. Only the curated example-output/ is committed.
+02-evidence-collection/evidence/
