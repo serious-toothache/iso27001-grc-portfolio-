@@ -1,0 +1,32 @@
+{
+  "evidence_id": "run_20261023T194112Z-S3-01",
+  "check_id": "S3-01",
+  "title": "S3 Block Public Access enabled at account level",
+  "iso27001_2022_annex_a": [
+    "A.8.3"
+  ],
+  "status": "PASS",
+  "summary": "All four account-level Block Public Access settings are on.",
+  "findings": [],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "s3control:GetPublicAccessBlock"
+  ],
+  "raw": {
+    "account_public_access_block": {
+      "BlockPublicAcls": true,
+      "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true,
+      "RestrictPublicBuckets": true
+    }
+  },
+  "raw_sha256": "7b0a06886e2284ecb84a8ba889cc019496114515319752e08ad76a0635bb9bc8"
+}

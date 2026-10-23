@@ -1,0 +1,28 @@
+{
+  "evidence_id": "run_20261023T194112Z-CRY-01",
+  "check_id": "CRY-01",
+  "title": "EBS encryption by default enabled",
+  "iso27001_2022_annex_a": [
+    "A.8.24"
+  ],
+  "status": "PASS",
+  "summary": "New EBS volumes are encrypted by default.",
+  "findings": [],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "ec2:GetEbsEncryptionByDefault"
+  ],
+  "raw": {
+    "region": "af-south-1",
+    "ebs_encryption_by_default": true
+  },
+  "raw_sha256": "dd2599ecec6cceb3a28c526a59e14395b9227e283dbebc7383b516fb6e2b162a"
+}

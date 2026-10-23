@@ -1,0 +1,69 @@
+{
+  "_comment": "Fictional AWS production account for Tausi Telehealth Ltd. Shapes match the normalized output of collect_live(). Contains deliberate gaps for the assessment in 03-gap-assessment.",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "password_policy": {
+    "MinimumPasswordLength": 8,
+    "RequireSymbols": false,
+    "RequireNumbers": true,
+    "RequireUppercaseCharacters": true,
+    "RequireLowercaseCharacters": true,
+    "AllowUsersToChangePassword": true,
+    "ExpirePasswords": false
+  },
+  "root_mfa_enabled": true,
+  "credential_report": [
+    {"user": "<root_account>", "password_enabled": false, "mfa_active": true,
+     "access_key_1_active": false, "access_key_1_last_rotated": "N/A",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "amina.otieno", "password_enabled": true, "mfa_active": true,
+     "access_key_1_active": false, "access_key_1_last_rotated": "N/A",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "brian.kamau", "password_enabled": true, "mfa_active": true,
+     "access_key_1_active": true, "access_key_1_last_rotated": "2026-09-14T08:12:00+00:00",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "carol.wanjiru", "password_enabled": true, "mfa_active": false,
+     "access_key_1_active": false, "access_key_1_last_rotated": "N/A",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "david.mutua", "password_enabled": true, "mfa_active": true,
+     "access_key_1_active": false, "access_key_1_last_rotated": "N/A",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "contractor-devops", "password_enabled": true, "mfa_active": false,
+     "access_key_1_active": true, "access_key_1_last_rotated": "2026-03-21T10:40:00+00:00",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"},
+    {"user": "svc-backup-runner", "password_enabled": false, "mfa_active": false,
+     "access_key_1_active": true, "access_key_1_last_rotated": "2026-08-30T06:00:00+00:00",
+     "access_key_2_active": false, "access_key_2_last_rotated": "N/A"}
+  ],
+  "cloudtrail": {
+    "trails": [
+      {"name": "tausi-mgmt-events", "arn": "arn:aws:cloudtrail:af-south-1:111122223333:trail/tausi-mgmt-events",
+       "home_region": "af-south-1", "is_multi_region": false, "log_file_validation": false,
+       "is_logging": true, "s3_bucket": "tausi-cloudtrail-logs", "kms_key_id": null}
+    ]
+  },
+  "s3": {
+    "account_public_access_block": {
+      "BlockPublicAcls": true, "IgnorePublicAcls": true,
+      "BlockPublicPolicy": true, "RestrictPublicBuckets": true
+    }
+  },
+  "ebs_encryption_by_default": true,
+  "security_groups": [
+    {"group_id": "sg-0a1b2c3d4e5f60001", "group_name": "web-alb", "vpc_id": "vpc-0prod",
+     "ingress": [
+       {"protocol": "tcp", "from_port": 443, "to_port": 443, "cidr": "0.0.0.0/0"},
+       {"protocol": "tcp", "from_port": 443, "to_port": 443, "cidr": "::/0"}
+     ]},
+    {"group_id": "sg-0a1b2c3d4e5f60002", "group_name": "app-servers", "vpc_id": "vpc-0prod",
+     "ingress": [
+       {"protocol": "tcp", "from_port": 8080, "to_port": 8080, "cidr": "10.20.0.0/16"},
+       {"protocol": "tcp", "from_port": 22, "to_port": 22, "cidr": "0.0.0.0/0"}
+     ]},
+    {"group_id": "sg-0a1b2c3d4e5f60003", "group_name": "patient-db", "vpc_id": "vpc-0prod",
+     "ingress": [
+       {"protocol": "tcp", "from_port": 5432, "to_port": 5432, "cidr": "10.20.0.0/16"}
+     ]}
+  ],
+  "guardduty": {"detectors": []}
+}

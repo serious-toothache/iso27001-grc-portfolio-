@@ -1,0 +1,70 @@
+{
+  "run_id": "run_20261023T194112Z",
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector_version": "1.0.0",
+  "counts": {
+    "PASS": 3,
+    "FAIL": 6,
+    "ERROR": 0
+  },
+  "evidence": [
+    {
+      "file": "IAM-01.json",
+      "check_id": "IAM-01",
+      "status": "FAIL",
+      "sha256": "9e2f5e2ea2ca5d3c33d109bbb71bc5d04b3f36297c960addc638a22a4f67bbf9"
+    },
+    {
+      "file": "IAM-02.json",
+      "check_id": "IAM-02",
+      "status": "PASS",
+      "sha256": "a823209e2a07582e4e2067a653fec66f96b67dc0968b119e941f35b28b4fea44"
+    },
+    {
+      "file": "IAM-03.json",
+      "check_id": "IAM-03",
+      "status": "FAIL",
+      "sha256": "5a2e1341cb6942f61d74eca8f6f80c98c1a7e21561f1e8a0e79c9a8508775919"
+    },
+    {
+      "file": "IAM-04.json",
+      "check_id": "IAM-04",
+      "status": "FAIL",
+      "sha256": "2f34f425d0aaa106fc504ee5e3eb71bcab7a981ae44ee8d1ec61890455dda24d"
+    },
+    {
+      "file": "LOG-01.json",
+      "check_id": "LOG-01",
+      "status": "FAIL",
+      "sha256": "3064963ea272353594969a8534f0826b8e4aa60f7bee5f768cac86c06b95b58e"
+    },
+    {
+      "file": "S3-01.json",
+      "check_id": "S3-01",
+      "status": "PASS",
+      "sha256": "be88d316d1fea750d8ee78e47945c557a4a5fc0b1ccbccbfeef9d0f5f8b76a45"
+    },
+    {
+      "file": "CRY-01.json",
+      "check_id": "CRY-01",
+      "status": "PASS",
+      "sha256": "12a081ac8bb0e1b88707ff74614a5b3322f1a45b983fd09fb25c7c83251ccad2"
+    },
+    {
+      "file": "NET-01.json",
+      "check_id": "NET-01",
+      "status": "FAIL",
+      "sha256": "a31f3eb422908efed143fc568f799b8833ee014f4a83c0f5530339f46136d0a6"
+    },
+    {
+      "file": "MON-01.json",
+      "check_id": "MON-01",
+      "status": "FAIL",
+      "sha256": "74c8bd3f052fa06df3aa6ec44e416cd67fe580e6544465a6d2087b7611c7479c"
+    }
+  ]
+}

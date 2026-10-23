@@ -1,0 +1,41 @@
+{
+  "evidence_id": "run_20261023T194112Z-LOG-01",
+  "check_id": "LOG-01",
+  "title": "Multi-region CloudTrail with log file validation",
+  "iso27001_2022_annex_a": [
+    "A.8.15"
+  ],
+  "status": "FAIL",
+  "summary": "No trail is multi-region, logging and integrity-validated.",
+  "findings": [
+    "Trail 'tausi-mgmt-events': not multi-region, log file validation off."
+  ],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "cloudtrail:DescribeTrails",
+    "cloudtrail:GetTrailStatus"
+  ],
+  "raw": {
+    "trails": [
+      {
+        "name": "tausi-mgmt-events",
+        "arn": "arn:aws:cloudtrail:af-south-1:111122223333:trail/tausi-mgmt-events",
+        "home_region": "af-south-1",
+        "is_multi_region": false,
+        "log_file_validation": false,
+        "is_logging": true,
+        "s3_bucket": "tausi-cloudtrail-logs",
+        "kms_key_id": null
+      }
+    ]
+  },
+  "raw_sha256": "5108931741659d3623fd0d316b5ece5716c8dfdd822b6e242abc4dcc4015bd99"
+}

@@ -1,0 +1,28 @@
+{
+  "evidence_id": "run_20261023T194112Z-IAM-02",
+  "check_id": "IAM-02",
+  "title": "Root user has MFA enabled",
+  "iso27001_2022_annex_a": [
+    "A.8.2",
+    "A.8.5"
+  ],
+  "status": "PASS",
+  "summary": "Root MFA is enabled.",
+  "findings": [],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "iam:GetAccountSummary"
+  ],
+  "raw": {
+    "root_mfa_enabled": true
+  },
+  "raw_sha256": "81a6529892005939d5d6514cbf776d0ef2c80ab4dae524151bce84bbecb76c38"
+}

@@ -1,0 +1,2 @@
+boto3>=1.34      # live mode only; mock mode needs nothing beyond the standard library
+pytest>=8.0      # tests

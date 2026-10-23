@@ -1,0 +1,49 @@
+{
+  "evidence_id": "run_20261023T194112Z-IAM-04",
+  "check_id": "IAM-04",
+  "title": "Active access keys rotated within 90 days",
+  "iso27001_2022_annex_a": [
+    "A.5.17"
+  ],
+  "status": "FAIL",
+  "summary": "1 of 3 active access key(s) exceed 90 days.",
+  "findings": [
+    "User 'contractor-devops' access key 1 is 215 days old (limit 90)."
+  ],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "iam:GetCredentialReport"
+  ],
+  "raw": {
+    "active_access_keys": [
+      {
+        "user": "brian.kamau",
+        "key": 1,
+        "last_rotated": "2026-09-14T08:12:00+00:00",
+        "age_days": 38
+      },
+      {
+        "user": "contractor-devops",
+        "key": 1,
+        "last_rotated": "2026-03-21T10:40:00+00:00",
+        "age_days": 215
+      },
+      {
+        "user": "svc-backup-runner",
+        "key": 1,
+        "last_rotated": "2026-08-30T06:00:00+00:00",
+        "age_days": 53
+      }
+    ],
+    "max_age_days": 90
+  },
+  "raw_sha256": "51c46111be74f009d097ef58caa02b0a83bc96f2e38444736a19cb9899c41d9f"
+}

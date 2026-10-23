@@ -1,0 +1,47 @@
+{
+  "evidence_id": "run_20261023T194112Z-IAM-01",
+  "check_id": "IAM-01",
+  "title": "IAM password policy meets baseline",
+  "iso27001_2022_annex_a": [
+    "A.5.17"
+  ],
+  "status": "FAIL",
+  "summary": "3 password policy setting(s) below baseline.",
+  "findings": [
+    "MinimumPasswordLength is 8; baseline requires >= 14.",
+    "RequireSymbols is False; baseline requires True.",
+    "PasswordReusePrevention is None; baseline requires >= 24."
+  ],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "iam:GetAccountPasswordPolicy"
+  ],
+  "raw": {
+    "password_policy": {
+      "MinimumPasswordLength": 8,
+      "RequireSymbols": false,
+      "RequireNumbers": true,
+      "RequireUppercaseCharacters": true,
+      "RequireLowercaseCharacters": true,
+      "AllowUsersToChangePassword": true,
+      "ExpirePasswords": false
+    },
+    "baseline": {
+      "MinimumPasswordLength": 14,
+      "RequireSymbols": true,
+      "RequireNumbers": true,
+      "RequireUppercaseCharacters": true,
+      "RequireLowercaseCharacters": true,
+      "PasswordReusePrevention": 24
+    }
+  },
+  "raw_sha256": "70069922b033550f87bf40e3f23e98f8227727da2378c03681b9851f3c6b8c38"
+}

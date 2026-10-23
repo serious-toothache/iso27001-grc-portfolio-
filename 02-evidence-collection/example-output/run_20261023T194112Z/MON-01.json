@@ -1,0 +1,31 @@
+{
+  "evidence_id": "run_20261023T194112Z-MON-01",
+  "check_id": "MON-01",
+  "title": "GuardDuty threat detection enabled",
+  "iso27001_2022_annex_a": [
+    "A.8.16"
+  ],
+  "status": "FAIL",
+  "summary": "GuardDuty is not enabled in this region.",
+  "findings": [
+    "No enabled GuardDuty detector in af-south-1."
+  ],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "guardduty:ListDetectors",
+    "guardduty:GetDetector"
+  ],
+  "raw": {
+    "region": "af-south-1",
+    "detectors": []
+  },
+  "raw_sha256": "d946f90443872867f6d9db3717753c917fe51c193dc4d9ff06e2cd8c5aaa239b"
+}

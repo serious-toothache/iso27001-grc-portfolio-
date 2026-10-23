@@ -1,0 +1,52 @@
+{
+  "evidence_id": "run_20261023T194112Z-IAM-03",
+  "check_id": "IAM-03",
+  "title": "All console users have MFA",
+  "iso27001_2022_annex_a": [
+    "A.8.5"
+  ],
+  "status": "FAIL",
+  "summary": "2 of 5 console user(s) have no MFA.",
+  "findings": [
+    "User 'carol.wanjiru' can sign in to the console without MFA.",
+    "User 'contractor-devops' can sign in to the console without MFA."
+  ],
+  "collected_at": "2026-10-23T19:41:12+00:00",
+  "as_of": "2026-10-23T00:00:00+00:00",
+  "account_id": "111122223333",
+  "region": "af-south-1",
+  "environment_source": "mock:mock_aws_environment.json",
+  "collector": {
+    "name": "collect_evidence.py",
+    "version": "1.0.0"
+  },
+  "api_calls": [
+    "iam:GenerateCredentialReport",
+    "iam:GetCredentialReport"
+  ],
+  "raw": {
+    "console_users": [
+      {
+        "user": "amina.otieno",
+        "mfa_active": true
+      },
+      {
+        "user": "brian.kamau",
+        "mfa_active": true
+      },
+      {
+        "user": "carol.wanjiru",
+        "mfa_active": false
+      },
+      {
+        "user": "david.mutua",
+        "mfa_active": true
+      },
+      {
+        "user": "contractor-devops",
+        "mfa_active": false
+      }
+    ]
+  },
+  "raw_sha256": "4f46d01ec77e8f51d0fb1f382f849eac581d0edf65560496678be238e61cc73f"
+}
