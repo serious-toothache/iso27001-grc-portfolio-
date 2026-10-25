@@ -1,7 +1,6 @@
 # 01 · Control Mapping: ISO/IEC 27001:2022 Annex A → Real Configuration
 
-**File:** [`annex-a-control-mapping.csv`](annex-a-control-mapping.csv) (GitHub renders it as a searchable table)
-
+**File:** [`annex-a-control-mapping.csv`](annex-a-control-mapping.csv) (Searchable table)
 ## What I built
 
 A mapping of 18 ISO/IEC 27001:2022 Annex A controls to the concrete technical implementations that satisfy them in an AWS + GitHub environment. Each row answers five questions an auditor would ask:
