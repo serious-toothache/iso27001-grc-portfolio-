@@ -23,7 +23,7 @@ A mapping of 18 ISO/IEC 27001:2022 Annex A controls to the concrete technical im
 
 ## Decisions and trade-offs
 
-- **ISO/IEC 27001:2022, not 2013.** The 2013 edition's transition period ended on 31 October 2025, so certifications now use the 2022 Annex A (93 controls in four themes). Older control IDs like A.9.4.2 are out of date.
+- **ISO/IEC 27001:2022, is the certification I attained, that's why i decided to put into practice.
 - **18 controls, not 93.** I chose the controls where technical configuration carries most of the weight, plus a few organizational controls (A.5.19, A.5.24) to show the mapping isn't only about cloud settings. The Statement of Applicability in a real ISMS would justify inclusion or exclusion of all 93.
 - **Plain-language requirements.** The control descriptions are my own paraphrases. ISO text is copyrighted, and rewriting each requirement in plain words is also the best test that I understand it.
 
