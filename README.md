@@ -2,10 +2,12 @@
 
 **Control mapping → automated evidence → gap assessment → control narrative, built end to end against one (fictional) company.**
 
-![ISO 27001:2022](https://img.shields.io/badge/ISO%2FIEC-27001%3A2022-FFB300?style=for-the-badge&labelColor=1B1B1B)
-![Python](https://img.shields.io/badge/Python-3.12-FFB300?style=for-the-badge&labelColor=1B1B1B&logo=python&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-boto3-FFB300?style=for-the-badge&labelColor=1B1B1B)
-![Evidence](https://img.shields.io/badge/Evidence-as%20Code-FFB300?style=for-the-badge&labelColor=1B1B1B)
+<p>
+  <picture><img src="https://img.shields.io/badge/ISO%2FIEC-27001%3A2022-FFB300?style=for-the-badge&labelColor=1B1B1B" alt="ISO 27001:2022"></picture>
+  <picture><img src="https://img.shields.io/badge/Python-3.12-FFB300?style=for-the-badge&labelColor=1B1B1B&logo=python&logoColor=white" alt="Python"></picture>
+  <picture><img src="https://img.shields.io/badge/AWS-boto3-FFB300?style=for-the-badge&labelColor=1B1B1B" alt="AWS"></picture>
+  <picture><img src="https://img.shields.io/badge/Evidence-as%20Code-FFB300?style=for-the-badge&labelColor=1B1B1B" alt="Evidence"></picture>
+</p>
 
 ## Why this repo exists
 
